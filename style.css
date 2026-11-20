@@ -154,3 +154,74 @@ body {
         padding: 22px;
     }
 }
+
+
+/* PROJECT DETAIL PAGE */
+
+.back-link {
+    display: inline-block;
+    color: #60a5fa;
+    text-decoration: none;
+    margin-bottom: 40px;
+    font-size: 15px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.project-header {
+    margin-bottom: 55px;
+}
+
+.project-header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.project-subtitle {
+    color: #60a5fa;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.project-process h2,
+.project-outcome h2 {
+    font-size: 26px;
+    margin-bottom: 24px;
+}
+
+.process-step {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 14px;
+    padding: 25px;
+    margin-bottom: 18px;
+}
+
+.process-step h3 {
+    color: #60a5fa;
+    margin-top: 0;
+    font-size: 19px;
+}
+
+.process-step p,
+.project-outcome p {
+    color: #cbd5e1;
+    line-height: 1.8;
+}
+
+.project-outcome {
+    margin-top: 55px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 600px) {
+    .project-header h1 {
+        font-size: 30px;
+    }
+
+    .process-step {
+        padding: 20px;
+    }
+}
