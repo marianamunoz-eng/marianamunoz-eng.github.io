@@ -1,17 +1,156 @@
+
+/* GENERAL WEBSITE STYLING */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0b1220;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* MAIN CONTAINER */
+
+.container {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 60px 24px;
+}
+
+/* INTRODUCTION */
+
 .hero {
     text-align: center;
-    padding: 100px 20px;
+    margin-bottom: 40px;
 }
 
 .hero h1 {
-    font-size: 48px;
-    margin-bottom: 15px;
+    font-size: 42px;
+    margin-bottom: 8px;
+    letter-spacing: -1px;
+}
+
+.hero h2 {
+    font-size: 20px;
+    color: #60a5fa;
+    font-weight: 500;
+    margin: 0;
+}
+
+.university {
+    color: #94a3b8;
+    font-size: 16px;
+    margin-top: 8px;
 }
 
 .description {
-    font-size: 18px;
-    color: #64748b;
-    max-width: 650px;
-    margin: 0 auto;
-    line-height: 1.7;
+    color: #cbd5e1;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-top: 28px;
+}
+
+/* PROFESSIONAL LINKS */
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 60px;
+}
+
+.button {
+    display: block;
+    padding: 16px 24px;
+    background-color: #1e293b;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #334155;
+    transform: translateY(-3px);
+}
+
+.button.primary {
+    background-color: #2563eb;
+    border-color: #2563eb;
+}
+
+.button.primary:hover {
+    background-color: #1d4ed8;
+}
+
+/* PROJECT SECTION */
+
+.projects {
+    margin-top: 40px;
+}
+
+.projects h2 {
+    font-size: 26px;
+    margin-bottom: 24px;
+}
+
+.project-card {
+    background-color: #1e293b;
+    padding: 28px;
+    border-radius: 16px;
+    border: 1px solid #334155;
+}
+
+.project-card h3 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.project-card p {
+    color: #cbd5e1;
+    font-size: 15px;
+}
+
+.project-card a {
+    color: #60a5fa;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 45px 20px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    .project-card {
+        padding: 22px;
+    }
 }
